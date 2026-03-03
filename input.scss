@@ -103,6 +103,10 @@ header {
         gap: 1rem;
         font-family: $full-stack;
     }
+    a {
+        text-decoration: none;
+        color: gray;
+    }
 }
 
 
