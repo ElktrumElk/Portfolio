@@ -1,13 +1,43 @@
-$bg: whitesmoke;
+$bg: rgb(248, 250, 251);
 
 @mixin theme($color) {
     background-color: $color;
 }
 
 body {
+    
     @include theme($color: $bg);
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
+
+    article {
+        align-self: flex-start;
+        width: 100%;
+
+        h2 {
+            color: gray;
+        }
+
+    }
+
+    fieldset {
+        border-radius: .2rem;
+        border: 1px solid gray;
+        background: white;
+    }
+
+    footer {
+        width: 100%;
+        background-color: rgb(204, 205, 206);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-block-start: 1rem;
+        padding: 1rem 0rem;
+
+    }
+    
 }
