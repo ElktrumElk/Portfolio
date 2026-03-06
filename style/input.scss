@@ -21,6 +21,7 @@ $mobile-header-display: none;
 
 * {
     font-size: 1.1rem;
+    margin: 0;
 
 }
 
@@ -41,6 +42,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 100%;
     border-bottom: 1px solid gray;
     margin-block-end: 2rem;
     background: $fg-bg-color;
@@ -162,10 +164,12 @@ header {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
 
     fieldset {
         background: white;
         border-radius: 1rem;
+        border: 1px solid gray;
     }
 }
 
@@ -236,7 +240,7 @@ header {
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 481px) {
     $mobile-header-display: flex;
 
     header {
@@ -298,7 +302,7 @@ header {
             background-color: $primary-info-cl ;
         }
     }
-    
+
     .info_cnt {
 
         display: flex;
@@ -386,7 +390,7 @@ header {
 
         grid-template-columns: 1fr;
         margin: 0;
-        width: 99%;
+        width: 90%;
 
         * {
             padding: 0;
