@@ -114,17 +114,22 @@ header {
         padding: 1rem;
         border-radius: 1rem;
         font-family: sans-serif;
+        border: 1px solid gray;
+
 
         ul {
-            list-style: circle;
+            list-style: none;
             display: flex;
             flex-direction: column;
             gap: 1rem;
+            padding: 0;
         }
 
         ul>* {
-            padding: .2rem .4rem;
+            padding: 1rem .4rem;
             border-radius: .3rem;
+            border: 1px solid gray;
+
         }
 
 
@@ -273,7 +278,7 @@ header {
 
     $cnt-bg: whitesmoke;
     $card-bg: white;
-    $primary-info-cl: rgba(121, 187, 244, 0.598);
+    $primary-info-cl: transparent;
 
     * {
         margin: 0;
@@ -394,7 +399,7 @@ header {
             overflow-x: hidden;
             width: 100%;
             border: 1px solid gray;
-            border-radius: .2rem;
+            border-radius: 1rem;
 
             ul {
                 display: grid;
@@ -490,6 +495,8 @@ header {
 
         .skill_cnt {
             div {
+                background-color: transparent;
+
                 ul {
 
                     li {
