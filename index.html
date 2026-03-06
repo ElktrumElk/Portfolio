@@ -4,33 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/input.css">
+    <title>Elktrum Elk | Potfolio</title>
+    <link rel="icon" href="/ics/github_ic.png">
+    <link rel="stylesheet" href="/style/input.css">
 </head>
 
 <body>
-    <div class="app">
 
-        <header>
+    <header>
+        <h1>Elkanah Cole</h1>
+        <div class="hamb_cnt">
+            <a target="_blank" href="https://github.com/ElktrumElk"><img src="./ics/github_ic.png"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/elkanah-cole-b29582388"><img
+                    src="./ics/linkedin.png"></a>
+            <div class="hamb" id="hambuger">≡</div>
+        </div>
+    </header>
 
-            <h1>Elkanah Cole</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contacts</a></li>
-                </ul>
-            </nav>
+    <!--==========================Side bar========================================-->
+    <div class="side_bar">
 
-            <div class="hamb_cnt">
-                <a target="_blank" href="https://github.com/ElktrumElk"><img src="./ics/github_ic.png"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/elkanah-cole-b29582388"><img src="./ics/linkedin.png"></a>
-                <div class="hamb" id="hambuger">≡</div>
-                
+        <div class="profile_img">
+            <figcaption class="p_cnt">
+                <img class="pp" src="/images/my_photo.jpg" alt="my image" />
+                 <br>
+                 <br>
+
+                 <h1>Elkanah Cole</h1>
+            </figcaption>
+        </div>
+
+        <div class="link_cnt">
+            <a class="link" href="https://github.com/ElktrumElk"><img src="./ics/github_ic.png" alt="github.com"></a>
+            <a class="link" href="https://github.com/ElktrumElk"><img src="./ics/linkedin.png" alt="github.com"></a>
+        </div>
+
+        <div class="info_cnt">
+            
+            <div class="info">
+                <span><strong>Contact</strong> +23276413626 / +23279971214</span>
             </div>
 
-        </header>
+            <div class="info">
+                <span><strong>Email</strong> festinacole373@gmail.com</span>
+            </div>
 
+            <div class="info">
+                <span><strong>D.O.B</strong> 9th April 2007</span>
+            </div>
+
+            <!--===================my bio for side bar=====================-->
+            <article class="info">
+                <p>I'm Elkanah Cole, normally Called Elktrum Elk. I build
+                    sofisticated website with responsive designs. As a frontend Developer i beleive clearity is
+                    better
+                    than complexity, whiles quality is greater than quantity. Always learnig acquiring more skills
+                </p>
+            </article>
+        </div>
+    </div>
+
+
+    <!--================Main container===================-->
+    <div class="app">
+
+        <!--Nav bar-->
         <div class="nav_bar" id="side-bar">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -39,83 +77,114 @@
             </ul>
         </div>
 
-        <article id="about">
-            <h2>Elkanah Cole</h2>
-            <fieldset>
-                <legend>About Me</legend>
-                <p>Hi, My name is Elkanah Cole, normally Called Elktrum Elk short for elk. I am passionate in
-                    building
-                    sofisticated website with responsive designs that is not too complicated. As a frontend Developer i
-                    would
-                    love to show out my skills and learn more.</p>
-            </fieldset>
+
+        <!--===============About Me========================-->
+        <article id="about" class="about">
+
+            <div class="text">
+
+                <h2>Hi!</h2>
+
+                <fieldset>
+
+                    <p>I'm Elkanah Cole, normally Called Elktrum Elk. I build
+                        sofisticated website with responsive designs. As a frontend Developer i beleive clearity is
+                        better
+                        than complexity, whiles quality is greater than quantity. Always learnig acquiring more skills
+                    </p>
+
+                    <div class="link_cnt">
+                        <a class="link" href="https://github.com/ElktrumElk"><img src="./ics/github_ic.png"
+                                alt="github.com"></a>
+                        <a class="link" href="https://github.com/ElktrumElk"><img src="./ics/linkedin.png"
+                                alt="github.com"></a>
+                    </div>
+
+                </fieldset>
+            </div>
+
+            <div class="p_cnt">
+                <img class="pp" src="/images/my_photo.jpg" alt="my image" />
+            </div>
         </article>
 
+        <!--===============SKills========================-->
         <article>
+            <br>
             <h2>Skills</h2>
 
-            <fieldset>
-                <legend>Skills</legend>
-
-                <ul>
+            <fieldset class="skill_cnt">
+                <div>
                     <strong>Technical SKill</strong>
 
                     <ul>
-                        <li>frontend Developing</li>
-                        <li>Web Developing</li>
-                        <li>Web Designer</li>
+                        <li class="first-child">frontend Developer <br> HTML, CSS, JS, SASS</li>
+                        <li>VS CODE</li>
                         <li>Git</li>
-                        <li>web Dev tool</li>
+                        <li>Chrome Dev tool</li>
 
                     </ul>
-                    <br>
+                </div>
+
+                <div>
                     <strong>None-Technical Skill</strong>
                     <ul>
-                        <li>Strategy</li>
+                        <li>Strategy in Layouting</li>
                         <li>Research Skills</li>
-                        <li>Big imagination</li>
+
                     </ul>
-                </ul>
+                </div>
 
             </fieldset>
+
         </article>
 
         <article>
-            <h2>Languages</h2>
-            <fieldset>
-                <legend>Languages</legend>
-                <ol>
-                    <li>Krio</li>
-                    <li>English</li>
-                </ol>
-            </fieldset>
+            <h2>GitHub Contributions</h2>
+            <div id="contributions-graph"></div>
         </article>
 
-        <article>
-            <h2>Education</h2>
-            <fieldset>
-                <legend>Education</legend>
-                <p>Student of The College of Digital Excellence (CODE)</p>
-            </fieldset>
-        </article>
+        <!--===============Languages==================-->
+        <br>
+        <br>
+        <div class="gift">
+            <article>
+                <h2>Languages</h2>
+                <fieldset>
+                    <ol>
+                        <li>Krio</li>
+                        <li>English</li>
+                    </ol>
+                </fieldset>
+            </article>
 
-        <article>
-            <h2>Experience</h2>
-            <fieldset>
-                <legend>Experiance</legend>
-                <span>Currently learning</span>
-            </fieldset>
-        </article>
+            <article>
+                <h2>Education</h2>
+                <fieldset>
+                    <p>Student of The College of Digital Excellence (CODE)</p>
+                </fieldset>
+            </article>
 
+            <article>
+                <h2>Experience</h2>
+                <fieldset>
+                    <span>Currently learning</span>
+                </fieldset>
+            </article>
+        </div>
 
     </div>
+
     <footer id="contact">
         <span><strong>Contact: </strong>+23276413626 / +23279971214</span>
 
         <br><br>
         <span><strong>Whatsapp: </strong>+23276413626</span>
     </footer>
-    <script src="/script.js"></script>
+
+
+    <script src="scripts/github-contributions.js" type="module"></script>
+    <script src="/scripts/script.js" type="module"></script>
 </body>
 
 </html>

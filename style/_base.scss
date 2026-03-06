@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+    margin-block-end: 0;
 
     article {
         align-self: flex-start;
@@ -22,28 +23,28 @@ body {
 
         h2 {
             color: gray;
-
             align-self: flex-start;
+            margin: 0;
             margin-inline-start: 1rem;
         }
 
         
             fieldset {
                 border-radius: .2rem;
-                border: 1px solid gray;
-                background: white;
+                border: none;
                 width: 90%;
             }
     }
 
     footer {
         width: 100%;
-        background-color: rgb(204, 205, 206);
+        background-color: rgba(236, 237, 237, 0.753);
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-block-start: 1rem;
         padding: 1rem 0rem;
+        flex: 1;
 
     }
     
